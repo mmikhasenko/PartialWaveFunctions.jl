@@ -20,24 +20,22 @@ let j=3, (m1,m2) = (1,-1), cosθ=0.3
    wignerd(j,m1,m2,cosθ)
 end # return 0.293
 
-clebschgordan(1,0,1,0,1,0) #  # <1, 0; 1, 0 | 1, 0> = 0.0 : ρ⁰ → π⁰ π⁰
+clebschgordan(1,0,1,0,1,0) # <1, 0; 1, 0 | 1, 0> = 0.0 : ρ⁰ → π⁰ π⁰
 CG(1,0,1,0,1,0) # a shortcut
 ```
 
-general implementation including half-integer indices
+General implementation includes the half-integer indices:
 ```julia
-#
 let two_j=3, (two_m1,two_m2) = (1,-1), cosθ=0.3
    wignerd_doublearg(two_j,two_m1,two_m2, cosθ)
 end # return -0.562
 
 clebschgordan_doublearg(2,0,1,1,1,1) # <1, 0; 1/2, 1/2 | 1/2, 1/2> = -0.577
 CG_doublearg(2,0,1,1,1,1) # a shortcut
-
 ```
 
-## Similar packages:
+## Related packages:
  * python calls via `SymPy.jl`. Ideal for symbolic calculations. Works pretty with jupyter notebooks due to the latex output. See details in the [test/physics](https://github.com/JuliaPy/SymPy.jl/blob/master/test/test-physics.jl).
- * [WignerD.jl](https://github.com/jishnub/WignerD.jl) interface `Fortran` for the `WignerD`.
- * [WignerSymbols.jl](https://github.com/Jutho/WignerSymbols.jl) `Julia` package specialized on Symbols. Particularly it contains the Clebsch-Gordan symbols.
- * [GSL.jl](https://github.com/JuliaMath/GSL.jl) interface `C++`. It can calculate Sperical Harmionics, Legendre polynomials. `WignerD` is not [wrapper-up](https://github.com/JuliaMath/GSL.jl/issues/66).
+ * [WignerD.jl](https://github.com/jishnub/WignerD.jl) interfaces `Fortran` for the `WignerD`.
+ * [WignerSymbols.jl](https://github.com/Jutho/WignerSymbols.jl) `Julia` package specialized on Symbols. Particularly it contains the Clebsch-Gordan coefficients.
+ * [GSL.jl](https://github.com/JuliaMath/GSL.jl) interfaces `C++`. It can calculate Sperical Harmionics, Legendre polynomials. `WignerD` is not [wrapper-up](https://github.com/JuliaMath/GSL.jl/issues/66).
