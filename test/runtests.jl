@@ -9,5 +9,10 @@ using Test
 
     # Wigner Function
     @test wignerD(3, 2, 1, π, 0, -π) ≈ -sqrt(10)/8 + 0im
+    @test wignerd(2, 0, 0, 1/sqrt(2)) ≈ (3/2-1)/2
     @test wignerd(1, 1, 0, 0.3) ≈ -sqrt(1-0.3^2)/sqrt(2)
+    @test wignerd_doublearg(1, 1, 1, 0) ≈ 1/sqrt(2)
+
+    #
+    @test sum(kronecker(i,j) for i in 1:5, j in 1:5) == 5
 end
