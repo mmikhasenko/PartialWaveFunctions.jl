@@ -8,7 +8,7 @@ Julia native implementation of the special functions used in the Partial Wave An
 
 ## Installation
 ```julia
-] add https://github.com/mmikhasenko/PartialWaveFunctions.jl # to be registered soon
+] add PartialWaveFunctions
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ CG_doublearg(2,0,1,1,1,1) # a shortcut
  * python calls via `SymPy.jl`. Ideal for symbolic calculations. Works pretty with jupyter notebooks due to the latex output. See details in the [test/physics](https://github.com/JuliaPy/SymPy.jl/blob/master/test/test-physics.jl).
  * [WignerD.jl](https://github.com/jishnub/WignerD.jl) interfaces `Fortran` for the `WignerD`.
  * [WignerSymbols.jl](https://github.com/Jutho/WignerSymbols.jl) `Julia` package specialized on Symbols. Particularly it contains the Clebsch-Gordan coefficients.
- * [GSL.jl](https://github.com/JuliaMath/GSL.jl) interfaces `C++`. It can calculate Sperical Harmionics, Legendre polynomials. `WignerD` is not [wrapper-up](https://github.com/JuliaMath/GSL.jl/issues/66).
+ * [GSL.jl](https://github.com/JuliaMath/GSL.jl) interfaces `C++`. It can calculate Sperical Harmionics, Legendre polynomials. `WignerD` is not [wrapped-up](https://github.com/JuliaMath/GSL.jl/issues/66).
 
 ## References
  * The Wigner functions are expressed via the Jacobi polynomials Pₙ⁽ᵃᵇ⁾(z) using Eq. (3.74) of
