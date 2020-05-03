@@ -39,3 +39,9 @@ CG_doublearg(2,0,1,1,1,1) # a shortcut
  * [WignerD.jl](https://github.com/jishnub/WignerD.jl) interfaces `Fortran` for the `WignerD`.
  * [WignerSymbols.jl](https://github.com/Jutho/WignerSymbols.jl) `Julia` package specialized on Symbols. Particularly it contains the Clebsch-Gordan coefficients.
  * [GSL.jl](https://github.com/JuliaMath/GSL.jl) interfaces `C++`. It can calculate Sperical Harmionics, Legendre polynomials. `WignerD` is not [wrapper-up](https://github.com/JuliaMath/GSL.jl/issues/66).
+
+## References
+ * The Wigner functions are expressed via the Jacobi polynomials Pₙ⁽ᵃᵇ⁾(z) using Eq. (3.74) of
+    L. Biedenharn, J. Louck, and P. Carruthers, Angular Momentum in Quantum Physics: Theory and Application
+ * The Jacobi polynomials Pₙ⁽ᵃᵇ⁾(z) are codded using a series expression in powers of (1-z), see e.g. [wikipedia page](https://en.wikipedia.org/wiki/Jacobi_polynomials).
+ * Clebsch-Gordan coefficients are computed from explicit expression via a finite series, see e.g. [wikipedia page](https://en.wikipedia.org/wiki/Table_of_Clebsch%E2%80%93Gordan_coefficients)
