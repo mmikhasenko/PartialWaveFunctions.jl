@@ -1,7 +1,7 @@
 name = "PartialWaveFunctions"
 uuid = "793d2195-304b-438e-bbb1-bc33c872ac39"
 authors = ["Misha Mikhasenko"]
-version = "0.2.0"
+version = "0.1.0"
 
 [compat]
 julia = "1.2"
