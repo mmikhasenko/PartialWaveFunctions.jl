@@ -4,7 +4,8 @@
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/mmikhasenko/PartialWaveFunctions.jl?svg=true)](https://ci.appveyor.com/project/mmikhasenko/PartialWaveFunctions-jl)
 [![Codecov](https://codecov.io/gh/mmikhasenko/PartialWaveFunctions.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/mmikhasenko/PartialWaveFunctions.jl)
 
-Julia native implementation of the special functions used in the Partial Wave Analysis for High Energy Physics. Currently, Wigner D-functions and Clebsch-Gordan coefficients are available.
+Julia native implementation of the special functions used in the Partial Wave Analysis for High Energy Physics. Currently, Wigner D-functions and Clebsch-Gordan(CG) coefficients are available.
+The implementation of the CG coefficient is by factor 4 faster than the C++ code from the JSL package (see details in [test/timing](test/timing_different_packages.jl)).
 
 ## Installation
 ```julia
@@ -39,6 +40,8 @@ CG_doublearg(2,0,1,1,1,1) # a shortcut
  * [WignerD.jl](https://github.com/jishnub/WignerD.jl) interfaces `Fortran` for the `WignerD`.
  * [WignerSymbols.jl](https://github.com/Jutho/WignerSymbols.jl) `Julia` package specialized on Symbols. Particularly it contains the Clebsch-Gordan coefficients.
  * [GSL.jl](https://github.com/JuliaMath/GSL.jl) interfaces `C++`. It can calculate Sperical Harmionics, Legendre polynomials. `WignerD` is not [wrapped-up](https://github.com/JuliaMath/GSL.jl/issues/66).
+
+
 
 ## References
  * The Wigner functions are expressed via the Jacobi polynomials Pₙ⁽ᵃᵇ⁾(z) using Eq. (3.74) of

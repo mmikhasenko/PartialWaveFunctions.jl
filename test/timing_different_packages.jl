@@ -104,3 +104,10 @@ end # 7.483 ms
     @unpack two_j1, two_j2, two_j, two_m1, two_m2, two_m = rand_clebsch()
     ClGd_sympy(two_j1,two_m1,two_j2,two_m2,two_j,two_m)
 end # 1.61 s
+
+# Summary
+# -------------
+# function      | `PartialWaveFunctions.jl` | `GSL.jl` | `WignerSymbols.jl` | `SymPy.jl` |
+# -------------
+# random Clebsh-Gordan coef.(j<15) | 227.2 μs | 921.8 μs | 7.483 ms | 1.61 s |
+# -------------
