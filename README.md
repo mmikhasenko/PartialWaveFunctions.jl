@@ -5,7 +5,7 @@
 [![Codecov](https://codecov.io/gh/mmikhasenko/PartialWaveFunctions.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/mmikhasenko/PartialWaveFunctions.jl)
 
 Julia native implementation of the special functions used in the Partial Wave Analysis for High Energy Physics. Currently, Wigner D-functions and Clebsch-Gordan(CG) coefficients are available.
-The implementation of the CG coefficient is by factor 4 faster than the C++ code from the JSL package (see details in [test/timing](test/timing_different_packages.jl)).
+The implementation of the CG coefficient is by factor 4 faster than the C++ code from the GSL package (see details in [test/timing](test/timing_different_packages.jl)).
 
 ## Installation
 ```julia
